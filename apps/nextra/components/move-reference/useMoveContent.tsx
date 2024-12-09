@@ -8,7 +8,7 @@ import {
   astToMarkdown,
   markdownToMdx,
   readMarkdownString,
-} from "@aptos-labs/nextra-components";
+} from "@jayden-dang/nextra-components";
 
 interface FetchContentParams {
   page: string | null;

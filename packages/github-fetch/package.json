@@ -1,5 +1,5 @@
 {
-	"name": "@aptos-labs/github-fetch",
+	"name": "@jayden-dang/github-fetch",
 	"version": "0.0.0",
 	"description": "A small set of github functions for fetching code. Designed to be used with code cache and Nextra",
 	"type": "module",

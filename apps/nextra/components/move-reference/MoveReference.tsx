@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Playground } from "nextra/components";
 import { usePathname } from "next/navigation";
 import { useRouter } from "next/router";
@@ -8,14 +8,14 @@ import {
   readMarkdownString,
   convertHtmlToMarkdownCodeBlocks,
   astToMarkdown,
-} from "@aptos-labs/nextra-components";
+} from "@jayden-dang/nextra-components";
 import { ModuleContainer } from "./ModuleContainer";
 import {
   MoveReferenceContext,
   useMoveReference,
   useURLParams,
 } from "./MoveReferenceProvider";
-import { BRANCHES, FrameworkData, GITHUB_APTOS_CORE } from "./shared";
+import { BRANCHES, FrameworkData } from "./shared";
 import { useMoveContent } from "./useMoveContent";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 

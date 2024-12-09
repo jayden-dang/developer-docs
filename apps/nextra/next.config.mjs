@@ -2,7 +2,7 @@
 import bundleAnalyzer from "@next/bundle-analyzer";
 import nextra from "nextra";
 import { i18nConfig } from "./docs.config.js";
-import { macros } from "@aptos-labs/aptos-nextra-config";
+import { macros } from "@jayden-dang/aptos-nextra-config";
 
 const withNextra = nextra({
   theme: "nextra-theme-docs",
@@ -38,8 +38,8 @@ export default withBundleAnalyzer(
     distDir: "./.next", // Nextra supports custom `nextConfig.distDir`
     reactStrictMode: true,
     transpilePackages: [
-      "@aptos-labs/aptos-nextra-config",
-      "@aptos-labs/github-fetch",
+      "@jayden-dang/aptos-nextra-config",
+      "@jayden-dang/github-fetch",
     ],
     redirects: async () => [
       {
