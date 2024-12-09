@@ -12,7 +12,7 @@
     "debug": "NODE_OPTIONS='--inspect' next dev",
     "dev": "next -p 3030",
     "postbuild": "next-sitemap --config next-sitemap.config.mjs; node generate-language-sitemaps.cjs; node generate-sitemap-index.cjs",
-    "start": "next start -p 3030",
+    "start": "next start -p 3000",
     "types:check": "tsc --noEmit",
     "fmt": "prettier --write '**/*.(css|tsx|ts|jsx|js|cjs|mjs|json|md|html)'",
     "lint": "prettier --check '**/*.(css|tsx|ts|jsx|js|cjs|mjs|json|md|html)'"
