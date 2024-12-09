@@ -1,3 +1,5 @@
 {
-  "public": true
+  "framework": "nextjs",
+  "buildCommand": "pnpm build",
+  "outputDirectory": ".next"
 }
