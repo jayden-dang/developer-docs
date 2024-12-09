@@ -1,0 +1,26 @@
+# This is the overarching CODEOWNERS file for Aptos.dev documentation.
+# It exists to help route review requests and ensure proper review of changes.
+# We include each subdirectory and relevant owners below:
+# Global rule:
+* @gregnazario @hariria @igor-p
+
+## Nodes
+apps/nextra/pages/en/network/nodes/** @rustielin @michelle-aptos @aptos-labs/prod-eng
+
+## Blockchain
+apps/nextra/pages/en/network/blockchain/** @aptos-labs/blockchain-eng
+
+## Indexer
+apps/nextra/pages/en/build/indexer/** @aptos-labs/ecosystem-infra
+
+## SDKs
+apps/nextra/pages/en/build/sdks/** @gregnazario @aptos-labs/developer-platform
+
+## create-aptos-dapp
+apps/nextra/pages/en/build/create-aptos-dapp/** @0xmaayan
+
+## CLI
+apps/nextra/pages/en/build/cli/** @gregnazario
+
+## Smart Contracts
+apps/nextra/pages/en/build/smart-contracts/** @aptos-labs/move-eng

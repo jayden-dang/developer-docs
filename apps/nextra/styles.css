@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Satoshi";
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: fallback;
+    src: url(./public/fonts/Satoshi-Variable.woff2) format("woff2");
+  }
+
+  .fit {
+    min-height: calc(100vh - 260px);
+  }
+}
+
+body {
+  font-feature-settings:
+    "rlig" 1,
+    "calt" 1;
+}
+
+/* Styles to apply when the current page is the landing page */
+:root *:has(.landing-page) {
+  /* Style document background */
+  background-color: var(--background-primary);
+
+  /* Style nav bar */
+  .nextra-nav-container-blur {
+    background-color: var(--nav-background);
+  }
+
+  /* Style footer */
+  footer {
+    background-color: var(--background-primary);
+
+    hr {
+      border-color: var(--border-divider);
+    }
+  }
+}
+
+.home-content p {
+  margin-top: 1.5em;
+  line-height: 1.75em;
+}
+
+figcaption {
+  font-size: 0.85rem;
+  line-height: 1.5rem;
+  display: block;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+code.text-\[\.9em\] {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1200px) {
+  .home-content .hide-medium {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .home-content p {
+    font-size: 0.9rem;
+  }
+
+  .home-content .hide-small {
+    display: none;
+  }
+}
+
+/* Scalar API Reference Styling */
+
+.token {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.scalar-codeblock-pre.line-numbers {
+  padding-left: 2.5em !important;
+}
+
+.scalar-api-reference {
+  background-color: inherit !important;
+  /* height: unset !important; */
+}
+
+.references-rendered {
+  background-color: inherit !important;
+}
+
+.sidebar {
+  background-color: inherit !important;
+}
+
+.darklight-reference {
+  display: none !important;
+}
+
+.references-navigation-list {
+  background-color: inherit !important;
+}
+
+@media (max-width: 1000px) {
+  .references-navigation-list {
+    background-color: var(--scalar-background-1) !important;
+  }
+}
+
+div[id*="headlessui-menu-items-"] {
+  max-height: 20rem !important;
+}
